@@ -4,23 +4,19 @@ inventory = {}
 # Function to add items to the inventory.
 def add_item():
     name = input("Enter the item name: ")
-    quantity = int(input("Enter the quantity: ")) ##added closing parenthesis
-
-    def fixedUp():
-        if quantity == str:
-            thisWrong = int(input("Please input a whole number: ")) ## eliminating answers with strings
+    quantity = int(input("Enter the quantity: "))  # Fixed the missing closing parenthesis
     
     # Check if the item is already in the inventory and update its quantity.
-    if (name or thisWrong) in inventory:
-        inventory[name or thisWrong] += quantity
+    if name in inventory:
+        inventory[name] += quantity
     else:
         # If the item is not in the inventory, add it with the specified quantity.
-        inventory[name or thisWrong] = quantity
+        inventory[name] = quantity
 
 # Function to remove items from the inventory.
 def remove_item():
     name = input("Enter the item name to remove: ")
-
+    
     # Check if the item is in the inventory.
     if name in inventory:
         quantity = int(input("Enter the quantity to remove: "))
