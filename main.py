@@ -8,7 +8,7 @@ def add_item():
 
     def fixedUp():
         if quantity == str:
-            thisWrong = int(input("Please input a whole number: ")) ## eliminating answers with strings
+            thisWrong = int(input("Please input a whole number: ")) ## eliminating answers with stringss
     
     # Check if the item is already in the inventory and update its quantity.
     if (name or thisWrong) in inventory:
